@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/index2.css">
+    
+</head>
+<body>
+    <div class="preloader">
+        <svg xmlns="http://www.w3.org/2000/svg" height="128px"  width="256px" viewBox="0 0 256 128" class="ip">
+            <defs>
+                <linearGradient y2="0" x2="1" y1="0" x1="0" id="grad1">
+                    <stop stop-color="#5ebd3e" offset="0%"></stop>
+                    <stop stop-color="#ffb900" offset="33%"></stop>
+                    <stop stop-color="#f78200" offset="67%"></stop>
+                    <stop stop-color="#e23838" offset="100%"></stop>
+                </linearGradient>
+                <linearGradient y2="0" x2="0" y1="0" x1="1" id="grad2">
+                    <stop stop-color="#e23838" offset="0%"></stop>
+                    <stop stop-color="#973999" offset="33%"></stop>
+                    <stop stop-color="#009cdf" offset="67%"></stop>
+                    <stop stop-color="#5ebd3e" offset="100%"></stop>
+                </linearGradient>
+            </defs>
+            <g stroke-width="16" stroke-linecap="round" fill="none">
+                <g stroke="#ddd" class="ip__track">
+                    <path d="M8,64s0-56,60-56,60,112,120,112,60-56,60-56"></path>
+                    <path d="M248,64s0-56-60-56-60,112-120,112S8,64,8,64"></path>
+                </g>
+                <g stroke-dasharray="180 656">
+                    <path d="M8,64s0-56,60-56,60,112,120,112,60-56,60-56" stroke-dashoffset="0" stroke="url(#grad1)" class="ip__worm1"></path>
+                    <path d="M248,64s0-56-60-56-60,112-120,112S8,64,8,64" stroke-dashoffset="358" stroke="url(#grad2)" class="ip__worm2"></path>
+                </g>
+            </g>
+        </svg>
+    </div>
+   
+    
+    <div class="banner1">
+        <div class="navbar">
+            <div class="imgDiv">
+                <a href="index.html"><img class="logo" src="./assets/Log04.png" alt=""></a>
+                
+            </div>  
+            <i class="bi bi-list" id="toggel1"></i>
+            
+            <!-- <div class="menu">
+                <ul>
+                    <li>about1</li>
+                    <li>about2</li>
+                    <li>about3</li>
+                    <li>about3</li>
+                </ul>
+            </div> -->
+        </div>
+        <div class="menu" id="menu">
+            <ul>
+                <li><a href="index.html" class="menuLink">Home</a></li>
+                <li><a href="aboutus.html" class="menuLink">About us</a></li>
+                <li class="open_submenu1" onclick="submenuTogel()"><a class="menuLink" href="#">Solutions</a></li>
+                    <ul class="sub_menu" id="one">
+                        <li><a href="Sass.html" class="menuLink">Sass</a></li>
+                        <li><a href="Robotic process.html" class="menuLink">Robotic Process Automation</a></li>
+                        <li><a href="softwaredevelopment.html" class="menuLink">Software Development</a></li>
+                    <li><a href="web_development.html" class="menuLink">Testing</a></li>
+                    </ul>
+                <!-- <li class="open_submenu2" onclick="submenuTogel2()"><a class="menuLink" href="#">Digital developments</a></li>
+                <ul class="sub_menu" id="two">
+                   
+                    <li><a href="softwaredevelopment.html" class="menuLink">Software Development</a></li>
+                    <li><a href="web_development.html" class="menuLink">Testing</a></li>
+                   
+                </ul> -->
+                <!-- <li class="open_submenu3" onclick="submenuTogel3()"><a class="menuLink" href="#">company</a></li>
+                <ul class="sub_menu" id="three">
+                    <li><a href="aboutus.html" class="menuLink">About us</a></li>
+                    
+                </ul> -->
+                <li class="open_submenu4" onclick="submenuTogel4()"><a class="menuLink" href="insights.html">Insights</a></li>
+                <!-- <ul class="sub_menu" id="four">
+                    <li><a href="#" class="menuLink">news & updates</a></li>
+                    <li><a href="#" class="menuLink">blogs</a></li>
+                    <li><a href="#" class="menuLink">client testimonials</a></li>
+                    <li><a href="#" class="menuLink">Gallary</a></li>
+                </ul> -->
+                <li><a href="career.html" class="menuLink">Careers</a></li>
+                <li><a href="contactus.html" class="menuLink">Contact</a></li>
+                
+            </ul>
+        </div>
+        <div class="banner_content">
+            <h1 class="h1">Digital products for your needs</h1>
+            
+            <h2 class="h2">Empowering tomorrow with today's technology.</h2>
+        </div>
+        <div class="video1">
+        <video class="vid" id="v1"     autoplay="" loop="">
+            <source class="vidsrc" src="./assets/video/1118545_4k_Form_Graphic_3840x2160.mp4" type="video/mp4">
+           
+        </video>
+        <!-- <img class="curve1" src="./assets/footer 05.png" alt=""> -->
+        </div>
+        <div class="blank1">
+            <img class="curve1" src="./assets/footer 05.png" alt="">
+            
+        </div>
+        <img class="banner_img" src="./assets/Main image-1.png" alt="">
+    </div>
+    <!-- <div class="feature">
+        <div class="feature_h">
+            
+            <p >Feature</p>
+            
+             <h2>provide emphasis</h2> 
+            
+            <h2>our tool</h2>
+            
+        </div>
+        <div class="feature_mul">
+            <div class="card1">
+                <div class="img_div"><img src="./idea.jpg" alt=""></div>
+                <div class="para_div">
+                    <h5>feature1</h5>
+                    <p>the many individual components that make a website easy to navigate, functional and valuable to users</p>
+                </div>
+            </div>
+            <div class="card2">
+                <div class="img_div"><img src="./connection.jpg" alt=""></div>
+                <div class="para_div">
+                    <h5>feature2</h5>
+                    <p>the many individual components that make a website easy to navigate, functional and valuable to users</p>
+                </div>
+            </div>
+            <div class="card3">
+                <div class="img_div"><img src="./feature3.jpg" alt=""></div>
+                <div class="para_div">
+                    <h5>feature3</h5>
+                    <p>the many individual components that make a website easy to navigate, functional and valuable to users</p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="Help">
+        <div class="help_div">
+            <p>OUR SERVICES</p>
+            <h2>How we can help?</h2>
+        </div>
+        <div class="help_dis">
+            <div class="c1">
+                <div class="c1_div">
+                    <h2 class="help_h2">Cloud Computing Services</h2>
+                    <p class="help_p">Provisioning and management of cloud-based infrastructure, platforms, and software solutions, such as Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS).</p>    
+                </div>
+                <div class="c1_div">
+                    <h2 class="help_h2">Software Development Services</h2>
+                    <p class="help_p">Custom software development, including web applications, mobile apps, enterprise software, and integration services.</p>    
+                </div>
+                <div class="c1_div">
+                    <h2 class="help_h2">Web Development and Design</h2>
+                <p class="help_p">Creation and maintenance of websites, web applications, user interface (UI) design, and user experience (UX) design.</p>    
+                </div>
+                
+            </div>
+            <div class="c2">
+                <img class="c2img" src="./assets/Blue sec.png" alt="">
+            </div>
+            <div class="c3">
+                <div class="c1_div">
+                    <h2 class="help_h2">IT Infrastructure Services</h2>
+                    <p class="help_p">Design, implementation, and management of IT infrastructure components, such as servers, storage, virtualization, and backup solutions. </p>   
+                </div>
+                <div class="c1_div">
+                    <h2 class="help_h2">Data Analytics and Business Intelligence</h2>
+                    <p class="help_p">Gathering, analysis, and interpretation of data to derive insights and support data-driven decision-making.</p>    
+                </div>
+                <div class="c1_div">
+                    <h2 class="help_h2">IT Project Management</h2>
+                    <p class="help_p">Planning, execution, and supervision of IT projects, ensuring timely delivery, budget adherence, and stakeholder satisfaction.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="banner">
+        <div class="blank2">
+            <img class="curve2" src="./assets/footer copy 08.png" alt="">
+        </div>
+        <div class="video2">
+            <video class="vid2"  id="v2"   autoplay loop>
+                <source class="vidsrc" src="./Home page/_import_6166e79cddeab9.62548001_FPpreview.mp4" type="video/mp4">
+            </video>
+            
+            </div>
+            <div class="blank3">
+                <img class="curve3" src="./assets/footer copy 07.png" alt="">
+            </div>
+    </div>
+    <div class="steps">
+        <div class="steps_head">
+            <p>HOW WE DO IT</p>
+            <h2>Steps to build a sucessful digital product</h2>
+            <p>Our software isn't just for today – it's built for tomorrow.</p>
+            <p>We engineer scalable solutions that evolve with your business, saving you time and resources.</p>
+        </div>
+        <div class="steps_discription">
+            <img class="step_img" src="./assets/Steps for digital product.png" alt="">
+        </div>
+        
+
+    </div>
+    <div class="blog">
+        <div class="blog_head">
+            <h4>Read Our Lates News</h4>
+            <p>Ad nec unum copiosae. Sea ex everti laborus. ad option iuvaret qui</p>
+            <p>id quo esse nusquam. exam iriure oporteat</p>
+        </div>
+        <div class="blog_cards">
+            <div class="card">
+                <img class="c_img" src="./modern-equipped-computer-lab.jpg" alt="">
+                <p>date</p>
+                <h3>Read Our Lates News</h3>
+                <a class="read_ref" href="#">READ MORE</a>
+            </div>
+            <div class="card">
+                <img class="c_img" src="./modern-equipped-computer-lab.jpg" alt="">
+                <p>date</p>
+                <h3>Read Our Lates News</h3>
+                <a class="read_ref" href="#">READ MORE</a>
+            </div>
+            <div class="card">
+                <img class="c_img" src="./modern-equipped-computer-lab.jpg" alt="">
+                <p>date</p>
+                <h3>Read Our Lates News</h3>
+                <a class="read_ref" href="#">READ MORE</a>
+            </div>
+        </div>
+        <div><button class="btn_load">LOAD MORE</button></div>
+
+    </div>
+     
+    <!-- <div class="form">
+        <div class="form_Head">
+            <p>CONTACT US</p>
+            <H2>Drop Us a Line</H2>
+            <p>Ad nec unum copiosae. Sea ex everti laborus. ad option iuvaret qui</p>
+            <p>id quo esse nusquam. exam iriure oporteat</p>
+        </div>
+        <form action="#" class="form_div">
+            
+            <div class="form_l">
+                <i class="bi bi-person"></i>
+                <div class="text_div">
+                    <input type="text" name="" id="" required="required">
+                    <span>user name</span>
+                   
+                </div>
+            </div>
+            <div class="form_l">
+                <i class="bi bi-envelope"></i>
+            <div class="text_div">
+                <input type="email" name="" id="" required="required">
+                <span>email</span>
+                
+            </div>
+             </div>
+             <div class="form_l">
+                <i class="bi bi-telephone-fill"></i>
+            <div class="text_div">
+                <input type="text" name="" id="" required="required">
+                <span>phone number</span>
+               
+            </div>
+        </div>
+            <div class="submit_div"><input class="btn_submit" type="submit" value="submit"></div>
+        </form>
+    </div> -->
+    <div class="row_one">
+        <div class="col_one">
+            <div><i class="bi bi-database-lock"></i></div>
+            <div class="col_text">
+                <p class="num" data-val="9">0+</p>
+                <p>Projects</p>
+            </div>
+            
+        </div>
+        <div class="col_one">
+            <i class="bi bi-person-plus-fill"></i>
+            <div class="col_text">
+                <p class="num" data-val="12">0+</p>
+                <p>Consolates</p>
+            </div>
+        </div>
+
+        <div class="col_one">
+            <i class="bi bi-hand-thumbs-up"></i>
+            <div class="col_text">
+                <p class="num" data-val="14">0+</p>
+                <p>Happy clients</p>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer1">
+        <div class="social1">
+            <a href="#"><i class="bi bi-envelope social"></i></a> 
+            <a href="#"><img class="twticon" src="./assets/icons/009-Twitter new logo.png" alt=""></i></a> 
+        </div>
+        <div class="col_1">
+            <div class="Addres">
+            <img class="mappp" src="./assets/images/Worldmap_India.png" alt="worldMap">
+            </div>
+            
+            <div class="form_div">
+                <!-- <form action="" method="post" class="form">
+                    <h3>Join us</h3>
+                <input class="form_input" type="text" name="" id="" placeholder="Name">
+                <input class="form_input" type="email" name="" id="" placeholder="Email Address">
+                <input class="form_submit" type="submit" value="sbscrbe now">
+                </form> -->
+                <div class="address">
+                    <p>#2, Sivasakthi Colony, Villivakkam, Chennai-600049.</p>
+                    <p>India</p>
+                    <p>Emailid: admin@Cybercraftz.com</p>
+
+                </div>
+                <div class="quickLinks">
+                    <h3>Quik Links</h3>
+                    <a href="Privacy_policy.html">Privacy Policy</a>
+                    <a href="termsAndConditions.html">Terms and Conditions</a>
+                </div>
+                
+            </div>
+        </div>
+        <div class="social2">
+            <a href="#"><i class="bi bi-instagram social"></i></a> 
+            <a href="#"><i class="bi bi-facebook social"></i></a> 
+        </div>
+    </div>
+    <div class="copyright"><img class="copyright_img" src="./assets/icons/copyright-symbol-svgrepo-com (1).png" alt="copyright"><p> 2023 copyrights @Cybercraftz</p></div>
+    <!-- footer end -->
+    <script>
+        let m=document.getElementById("menu");
+        let t=document.getElementById("toggel1");
+        let trueOrFalse= false
+        function menuTogel(){
+            if(trueOrFalse==false){
+            m.style.display="block";
+            trueOrFalse=true
+            }
+            else{
+                m.style.display="none";  
+                trueOrFalse=false
+            }
+        }
+
+        t.addEventListener("click",menuTogel);
+       
+        let opensubmenu1=document.getElementById("one")
+        let flagOne=false;
+            function submenuTogel(){
+                if(flagOne==false){
+                    opensubmenu1.style.display="block";
+                    flagOne=true;
+                }
+                else{
+                    opensubmenu1.style.display="none";
+                    flagOne=false;
+                }
+            }
+
+            let opensubmenu2=document.getElementById("two")
+            let flagtwo=false;
+            function submenuTogel2(){
+                if(flagtwo==false){
+                    opensubmenu2.style.display="block";
+                    flagtwo=true;
+                }
+                else{
+                    opensubmenu2.style.display="none";
+                    flagtwo=false;
+                }
+            }
+            let opensubmenu3=document.getElementById("three")
+            let flagthree=false;
+            function submenuTogel3(){
+                if(flagthree==false){
+                    opensubmenu3.style.display="block";
+                    flagthree=true;
+                }
+                else{
+                    opensubmenu3.style.display="none";
+                    flagthree=false;
+                }
+            }
+            let opensubmenu4=document.getElementById("four")
+            let flagfour=false;
+            function submenuTogel4(){
+                if(flagfour==false){
+                    opensubmenu4.style.display="block";
+                    flagfour=true;
+                }
+                else{
+                    opensubmenu4.style.display="none";
+                    flagfour=false;
+                }
+            }
+
+            document.addEventListener("keydown",
+            function(e){
+                if(e.keyCode===27){
+                    trueOrFalse? menuTogel():"";
+                   flagOne? submenuTogel():"";
+                    flagtwo?submenuTogel2():"";
+                   flagthree?submenuTogel3():"";
+                   flagfour?submenuTogel4():"";
+                }
+            }
+            )
+        
+            let valueDisplay=document.querySelectorAll(".num")
+           
+            let intervel=1000;
+            valueDisplay.forEach(
+                (val)=>{
+
+                    let start_value=0;
+                    let end_value=parseInt(val.getAttribute("data-val"));
+                    let duration=Math.floor(intervel/end_value);
+                   let counter= setInterval(function(){
+                        start_value+=1;
+                        val.textContent=start_value+"+";
+                       
+                        if(start_value == end_value){
+                            clearInterval(counter);
+                        }
+                        
+                    },duration)
+                    
+                }
+            );
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal(
+            {
+                // reset:true,
+                distance: '60px',
+                duration: 2500,
+                delay:400
+            }
+        );
+
+        ScrollReveal().reveal('.steps_head, .banner_content, .help_div', { delay: 400, origin: 'left' });
+        ScrollReveal().reveal('.step_img', { delay: 600, origin: 'bottom' });
+    </script>
+    <script>
+        let preLoader=document.getElementsByClassName("preloader");
+        let videoload=document.getElementById("v1");
+        window.addEventListener("load",function(){
+            console.log(preLoader)
+            preLoader[0].style.display="none";
+        })
+    </script>
+</body>
+</html>
